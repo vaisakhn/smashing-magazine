@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+    </title>
+    <meta name="viewport" content="width=device-width" , initial-scale="1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Spinnaker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|PT+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Chela+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous|Song+Myung" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Erica+One|Fredoka+One|Hammersmith+One|Merienda|Mitr|Suez+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Capriola" rel="stylesheet">
+
+    <script type="text/JavaScript" src="jsfile.js" defer></script>
+
+</head>
+
+<body>
+    <img src="scrollup.png" onclick="topFunction()" id="myBtn" class="myBtn" width="5%">
+    <header>
+        <div style="padding-top: 2%;">
+            <img src="logo.svg" width="100px" onclick="location.reload()">
+        </div>
+        <div class="headiv" onclick="headBorder(this)" onmouseout="bordernone(this)">
+
+            <img src="articles.svg" width="20%" class="imghov">
+            <h3>Article
+                <div class="topics">Design & Development</div>
+            </h3>
+
+        </div>
+        <div class="headiv" onclick="headBorder(this)" onmouseout="bordernone(this)">
+            <img src="books.svg" width="20%" class="imghov">
+            <h3>Books
+                <div class="topics">Physical & Digital books</div>
+            </h3>
+
+        </div>
+        <div class="headiv" onclick="headBorder(this)" onmouseout="bordernone(this)">
+            <img src="events.svg" width="20%" class="imghov">
+            <h3>Events
+                <div class="topics">Conference & Workshops</div>
+            </h3>
+        </div>
+        <div class="headiv" onclick="headBorder(this)" onmouseout="bordernone(this)">
+            <img src="jobs.svg" width="20%" class="imghov">
+            <h3>Jobs
+                <div class="topics">Find Works & Employees</div>
+            </h3>
+
+        </div>
+        <div class="headiv" onclick="headBorder(this)" onmouseout="bordernone(this)">
+            <img src="membership.svg" width="20%" class="imghov">
+            <h3>Membership
+                <div class="topics">Webinars & Early Birds</div>
+            </h3>
+
+        </div>
+        <div class="search" onclick="footerdisplay()">
+            <svg viewBox="0 0 24 24" height="1.5em" width="1.5em">
+                <path fill="#fff" d="M23.33 20.1l-4.73-4.74a10.06 10.06 0 1 0-3.23 3.23l4.74 4.74a2.29 2.29 0 1 0 3.22-3.23zm-17.48-5.84a5.94 5.94 0 1 1 8.42 0 6 6 0 0 1-8.42 0z">
+                </path>
+                </svg>
+            <div class="topicss">Topics</div>
+        </div>
+    </header>
+
+    <div class="footerbrowse" style="display: none;" id="footerbrowse" style="margin: 0;">
+        <input type="search" class="searchArea" placeholder="Search smashing..."></input>
+        <h4 style="text-align: center; ">Browse all Smashing magazine topics</h4>
+        <ul>
+            <li>Accessibility</li>
+            <li>Android</li>
+            <li>Animation</li>
+            <li>Apps</li>
+            <li>CSS</li>
+            <li>Design</li>
+            <li>Design Patterns</li>
+            <li>Design Systems</li>
+            <li>E-Commerce</li>
+            <li>Freebies</li>
+            <li>Graphics</li>
+            <li>HTML</li>
+            <li>Illustrator</li>
+            <li>Inspiration</li>
+            <li>iOS</li>
+            <li>JavaScript</li>
+            <li>Mobile</li>
+            <li>Pattern Libraries</li>
+            <li>Performance</li>
+            <li>Photoshop</li>
+            <li>Plugins</li>
+            <li>React</li>
+            <li>Responsive Web Design</li>
+            <li>Service Workers</li>
+            <li>Sketch</li>
+            <li>Typography</li>
+            <li>UI</li>
+            <li>Usability</li>
+            <li>User Experience</li>
+            <li>Wallpapers Web Design</li>
+            <li>WordPress</li>
+            <li>Workflow</li>
+        </ul>
+    </div>
+
+    <div style="display: inline-block;" class="content">
+        <div class="redcard" style="background-color: #df3627f3;">
+            <div>
+                <img src="man.jpg" width="25%" class="imgborder">
+                <div class="author">Murat Kemaldar<span> wrote</span></div>
+            </div>
+            <div style=" margin: 15px 15px 15px;">
+                <div class="redesc" style="color: white;">Better Collaboration By Bringing Designers Into The Code Review Process</div>
+            </div>
+            <a href="#" style="color: rgb(245, 241, 241);padding:2%; text-decoration: none;">Comment</a>
+
+        </div>
+
+        <div class="redcard" style="background-color: #cf3123f8;">
+            <div>
+                <img src="man.jpg" width="25%" class="imgborder">
+                <div class="author">Murat Kemaldar<span> wrote</span></div>
+            </div>
+            <div style=" margin: 15px 15px 15px;">
+                <div class="redesc" style="color: white;">Better Collaboration By Bringing Designers Into The Code Review Process</div>
+            </div>
+            <a href="#" style="color: white">Comment</a>
+
+        </div>
+
+        <div class="redcard" style="background-color: #db2a1afa;">
+            <div>
+                <img src="man.jpg" width="25%" class="imgborder">
+                <div class="author">Murat Kemaldar<span> wrote</span></div>
+            </div>
+            <div style=" margin: 15px 15px 15px;">
+                <div class="redesc" style="color: white;">Better Collaboration By Bringing Designers Into The Code Review Process</div>
+            </div>
+            <a href="#" style="color: white">Comment</a>
+
+        </div>
+        <div class="redcard" style="background-color: #db2a1aec;">
+            <div>
+                <img src="man.jpg" width="25%" class="imgborder">
+                <div class="author">Murat Kemaldar<span> wrote</span></div>
+            </div>
+            <div style=" margin: 15px 15px 15px;">
+                <div class="redesc" style="color: white;">Better Collaboration By Bringing Designers Into The Code Review Process</div>
+            </div>
+            <a href="#" style="color: white">Comment</a>
+
+        </div>
+    </div>
+    <div class="white">
+        <div class="whitecard">
+            <div> 4 days ago</div>
+            <div class="heading">Pattern Library First: An Approach For Managing CSS</div>
+            <div class="author">
+                By paul
+            </div>
+            <div class="desc">CSS can be hard to manage across a project, especially when you need to include media queries for various breakpoints and fallbacks for older browsers. In this article, we will take a look at using Fractal to manage components which use CSS
+                Grid.
+            </div>
+        </div>
+        <div class="whitecard">
+            <div> 4 days ago</div>
+            <div class="heading">Pattern Library First: An Approach For Managing CSS</div>
+            <div class="author">
+                By paul
+            </div>
+            <div class="desc">CSS can be hard to manage across a project, especially when you need to include media queries for various breakpoints and fallbacks for older browsers. In this article, we will take a look at using Fractal to manage components which use CSS
+                Grid.
+            </div>
+        </div>
+        <div class="whitecard">
+            <div> 4 days ago</div>
+            <div class="heading">Pattern Library First: An Approach For Managing CSS</div>
+            <div class="author">
+                By paul
+            </div>
+            <div class="desc">CSS can be hard to manage across a project, especially when you need to include media queries for various breakpoints and fallbacks for older browsers. In this article, we will take a look at using Fractal to manage components which use CSS
+                Grid.
+            </div>
+        </div>
+
+
+        <div class="redbig">
+            <img src="redbig.svg" width="40%">
+            <div>
+                <a href="#" class="abig">961 Smashing members</a>
+            </div>
+            <p>A friendly community that keeps this website alive. With books, webinars, discounts and networking — for just 1 coffee a month. Join the family.
+            </p>
+            <button>
+            Explore features
+            </button>
+        </div>
+
+        <div class="whitecard">
+            <div> 4 days ago</div>
+            <div class="heading">Pattern Library First: An Approach For Managing CSS</div>
+            <div class="author">
+                By paul
+            </div>
+            <div class="desc">CSS can be hard to manage across a project, especially when you need to include media queries for various breakpoints and fallbacks for older browsers. In this article, we will take a look at using Fractal to manage components which use CSS
+                Grid.
+            </div>
+        </div>
+        <div class="whitecard">
+            <div> 4 days ago</div>
+            <div class="heading">Pattern Library First: An Approach For Managing CSS</div>
+            <div class="author">
+                By paul
+            </div>
+            <div class="desc">CSS can be hard to manage across a project, especially when you need to include media queries for various breakpoints and fallbacks for older browsers. In this article, we will take a look at using Fractal to manage components which use CSS
+                Grid.
+            </div>
+        </div>
+        <div class="whitecard">
+            <div> 4 days ago</div>
+            <div class="heading">Pattern Library First: An Approach For Managing CSS</div>
+            <div class="author">
+                By paul
+            </div>
+            <div class="desc">CSS can be hard to manage across a project, especially when you need to include media queries for various breakpoints and fallbacks for older browsers. In this article, we will take a look at using Fractal to manage components which use CSS
+                Grid.
+            </div>
+        </div>
+    </div>
+    <div class="green">
+        <div class="desc" style="text-align: center;">COMING UP NEXT • october 23–24, 2018</div>
+        <div class="abig">SmashingConf New York 2018</div>
+        <div class="desc" style="text-align: center;">The hunt for shiny front-end & UX treasures has begun! Performance, PWA, Vue.js, Webpack to Design Workflow, DesignOps and Variable Fonts. With Monica Dinculescu, Dan Mall, Jason Grigsby, Sara Soueidan and many others.</div>
+        <div style="margin: 50px; ">
+            <button style="padding: 1% 3%;">
+                        Explore all features and topics
+                    </button>
+        </div>
+        <img src="green.svg " width="70% " style="align-self: center; ">
+    </div>
+    <div class="cardlist">
+        <div class="card ">
+            <div class="auth">
+                <img src="man.jpg " class="imgborder" style="display: inline-block;">
+                <h4><a href=" # ">Murat Kemaldar</a> shared
+                </h4>
+            </div>
+            <h1>Generative World Cup Posters</h1>
+            <h3>jul 9, 2018 - The World Cup fever has caught up with nearly everyone, and this calls for a good reason to get creative. Zeh experiments with statistics API and canvas to generate abstract patterns for each game. There are new poster displayed
+                in his gallery after every match.</h3>
+        </div>
+        <div class="card ">
+            <div class="auth">
+                <img src="man.jpg " class="imgborder" style="display: inline-block;">
+                <h4><a href=" # ">Murat Kemaldar</a> shared
+                </h4>
+            </div>
+            <h1>Generative World Cup Posters</h1>
+            <h3>jul 9, 2018 - The World Cup fever has caught up with nearly everyone, and this calls for a good reason to get creative. Zeh experiments with statistics API and canvas to generate abstract patterns for each game. There are new poster displayed
+                in his gallery after every match.</h3>
+        </div>
+        <div class="card ">
+            <div class="auth">
+                <img src="man.jpg " class="imgborder" style="display: inline-block;">
+                <h4><a href=" # ">Murat Kemaldar</a> shared
+                </h4>
+            </div>
+            <h1>Generative World Cup Posters</h1>
+            <h3>jul 9, 2018 - The World Cup fever has caught up with nearly everyone, and this calls for a good reason to get creative. Zeh experiments with statistics API and canvas to generate abstract patterns for each game. There are new poster displayed
+                in his gallery after every match.</h3>
+        </div>
+        <div class="card ">
+            <div class="auth">
+                <img src="man.jpg " class="imgborder" style="display: inline-block;">
+                <h4><a href=" # ">Murat Kemaldar</a> shared
+                </h4>
+            </div>
+            <h1>Generative World Cup Posters</h1>
+            <h3>jul 9, 2018 - The World Cup fever has caught up with nearly everyone, and this calls for a good reason to get creative. Zeh experiments with statistics API and canvas to generate abstract patterns for each game. There are new poster displayed
+                in his gallery after every match.</h3>
+        </div>
+        <div class="card ">
+            <div class="auth">
+                <img src="man.jpg " class="imgborder" style="display: inline-block;">
+                <h4><a href=" # ">Murat Kemaldar</a> shared
+                </h4>
+            </div>
+            <h1>Generative World Cup Posters</h1>
+            <h3>jul 9, 2018 - The World Cup fever has caught up with nearly everyone, and this calls for a good reason to get creative. Zeh experiments with statistics API and canvas to generate abstract patterns for each game. There are new poster displayed
+                in his gallery after every match.</h3>
+        </div>
+        <div class="card ">
+            <div class="auth">
+                <img src="man.jpg " class="imgborder" style="display: inline-block;">
+                <h4><a href=" # ">Murat Kemaldar</a> shared
+                </h4>
+            </div>
+            <h1>Generative World Cup Posters</h1>
+            <h3>jul 9, 2018 - The World Cup fever has caught up with nearly everyone, and this calls for a good reason to get creative. Zeh experiments with statistics API and canvas to generate abstract patterns for each game. There are new poster displayed
+                in his gallery after every match.</h3>
+        </div>
+    </div>
+    <div class="design">
+        <div class="design1 ">
+            <div style="padding-bottom: 2%">fresh from the oven - september 2017</div>
+            <div class="abig ">Design Systems</div>
+            <div class="desc" style="padding-top: 2%">Is your pattern library up to date today? Alla Kholmatova has just finished a fully fledged book on Design Systems and how to get them right. With common traps, gotchas and the lessons she learned. Hardcover, eBook. Just sayin'.</div>
+            <div style="padding-top: 2%;">
+                <button>
+                    Table of contents
+                </button>
+            </div>
+        </div>
+        <div class="headiv ">
+            <img src="book.png " style=" width: 70%; margin-left: 100px; " class="imghov ">
+        </div>
+
+    </div>
+    <div>
+        <div class="designcard " style="height: auto; margin-left: 30px; ">
+            <div>Guide</div>
+            <div style="font-family: 'Chela One';font-size: 35px; ">Design Patterns and Checklists</div>
+            <ul>
+                <li><a href="# ">Art Direction</a></li>
+                <li><a href="# ">Perfect Configurator</a></li>
+                <li><a href="# ">Perfect Web Form</a></li>
+                <li><a href="# ">Perfect Accordion</a></li>
+                <li><a href="# ">Perfect Date Picker</a></li>
+                <li><a href="# ">Perfect Slider</a></li>
+                <li><a href="# ">Perfect Comparison Table</a></li>
+                <li><a href="# ">Perfect Infinite Scroll</a></li>
+                <li><a href="# ">Perfect Carousel</a></li>
+            </ul>
+        </div>
+        <div class="designcard " style="height: auto; margin-left: 30px; ">
+            <div>Guide</div>
+            <div style="font-family: 'Chela One';font-size: 35px; ">Design Patterns and Checklists</div>
+            <ul>
+                <li><a href="# ">Art Direction</a></li>
+                <li><a href="# ">Perfect Configurator</a></li>
+                <li><a href="# ">Perfect Web Form</a></li>
+                <li><a href="# ">Perfect Accordion</a></li>
+                <li><a href="# ">Perfect Date Picker</a></li>
+                <li><a href="# ">Perfect Slider</a></li>
+                <li><a href="# ">Perfect Comparison Table</a></li>
+                <li><a href="# ">Perfect Infinite Scroll</a></li>
+                <li><a href="# ">Perfect Carousel</a></li>
+            </ul>
+        </div>
+
+        <div class="designcard " style="height: auto; margin-left: 30px; ">
+            <div>Guide</div>
+            <div style="font-family: 'Chela One';font-size: 35px; ">Design Patterns and Checklists</div>
+            <ul>
+                <li><a href="# ">Art Direction</a></li>
+                <li><a href="# ">Perfect Configurator</a></li>
+                <li><a href="# ">Perfect Web Form</a></li>
+                <li><a href="# ">Perfect Accordion</a></li>
+                <li><a href="# ">Perfect Date Picker</a></li>
+                <li><a href="# ">Perfect Slider</a></li>
+                <li><a href="# ">Perfect Comparison Table</a></li>
+                <li><a href="# ">Perfect Infinite Scroll</a></li>
+                <li><a href="# ">Perfect Carousel</a></li>
+            </ul>
+        </div>
+        <div class="designcard " style="height: auto; ">
+            <div>Guide</div>
+            <div style="font-family: 'Chela One';font-size: 35px; ">Design Patterns and Checklists</div>
+            <ul>
+                <li><a href="# ">Art Direction</a></li>
+                <li><a href="# ">Perfect Configurator</a></li>
+                <li><a href="# ">Perfect Web Form</a></li>
+                <li><a href="# ">Perfect Accordion</a></li>
+                <li><a href="# ">Perfect Date Picker</a></li>
+                <li><a href="# ">Perfect Slider</a></li>
+                <li><a href="# ">Perfect Comparison Table</a></li>
+                <li><a href="# ">Perfect Infinite Scroll</a></li>
+                <li><a href="# ">Perfect Carousel</a></li>
+            </ul>
+        </div>
+
+        <div class="redbig2 ">
+            <div>
+                <a href="# " class="abig ">Smashing News Letter</a>
+            </div>
+            <div>Imagine you wrote a beautiful song and nobody discovered it. That would make any cat sad. Don't let that happen!
+            </div>
+            <img src="redbig2.svg " width="40% ">
+
+            <div>
+                <button>
+            Subscribe
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footerbrowse ">
+            <h4 style="text-align: center; ">Browse all Smashing magazine topics</h4>
+            <ul>
+                <li>Accessibility</li>
+                <li>Android</li>
+                <li>Animation</li>
+                <li>Apps</li>
+                <li>CSS</li>
+                <li>Design</li>
+                <li>Design Patterns</li>
+                <li>Design Systems</li>
+                <li>E-Commerce</li>
+                <li>Freebies</li>
+                <li>Graphics</li>
+                <li>HTML</li>
+                <li>Illustrator</li>
+                <li>Inspiration</li>
+                <li>iOS</li>
+                <li>JavaScript</li>
+                <li>Mobile</li>
+                <li>Pattern Libraries</li>
+                <li>Performance</li>
+                <li>Photoshop</li>
+                <li>Plugins</li>
+                <li>React</li>
+                <li>Responsive Web Design</li>
+                <li>Service Workers</li>
+                <li>Sketch</li>
+                <li>Typography</li>
+                <li>UI</li>
+                <li>Usability</li>
+                <li>User Experience</li>
+                <li>Wallpapers Web Design</li>
+                <li>WordPress</li>
+                <li>Workflow</li>
+            </ul>
+
+        </div>
+
+        <div class="footersplit ">
+            <img src="bird.svg " width="20% " class="image1 ">
+            <img src="catcage.svg " class="image2 ">
+            <img src="birdout.svg " class="image4 ">
+            <img src="birdfly.svg " class="image5 ">
+            <div class="footermid">
+                <p class="info">
+                    With a commitment to quality content for the design community.<br> Founded by Vitaly Friedman and Sven Lennartz. 2006–2018.<br> Smashing is proudly running on Netlify.<br> Fonts by Latinotype.<br>
+
+                    <a href="# ">Write for us</a>
+                    <a href="# ">Contact us</a>
+                    <a href="# ">About us</a>
+                    <a href="# ">Privacy policy</a>
+                    <a href="# ">Membership login</a>
+                    <a href="# ">Advetise</a>
+            </div>
+            <img src="cat.svg " width="20% " class="image3 ">
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
