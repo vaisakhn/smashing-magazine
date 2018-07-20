@@ -144,7 +144,7 @@
     
     .footerbrowse li::before {
         content: ' \25CF';
-        color: rgb(31, 28, 28);
+        color: rgb(92, 89, 89);
     }
     
     .footerbrowse li {
@@ -201,13 +201,32 @@
     }
     /*.....................................................Content................................................*/
     
+    .change {
+        font-family: 'Courier New', Courier;
+        background-color: #cf3123f8;
+        border-radius: 8px;
+        font-size: 20px;
+        color: #f2f3f3;
+        border: solid white 2px;
+        outline: 0;
+        font-weight: 700;
+        padding: 3% 4%;
+        cursor: pointer;
+    }
+    
     .content {
         font-family: 'Anton', sans-serif;
-        /* border: #CA3C35; */
+        border: #CA3C35;
+    }
+    
+    .redcard .colorchange {
+        display: block;
+        margin: 0 0 0 50%;
     }
     
     .imgborder {
-        border: 6px solid white;
+        border: 6px solid;
+        border-color: white;
         border-radius: 10px;
         transform-origin: bottom left;
         transform: rotate(-10deg);
@@ -229,7 +248,7 @@
     }
     
     .redcard .author {
-        color: rgb(255, 255, 255);
+        color: white;
     }
     
     .author {
@@ -323,6 +342,7 @@
         outline: 0;
         font-weight: 700;
         padding: 2% 3%;
+        cursor: pointer;
     }
     
     .designcard {
@@ -342,6 +362,16 @@
     .designcard:hover {
         box-shadow: 0px 2px 44px -5px rgba(0, 0, 0, 0.75);
         transform: scale(1.1);
+    }
+    
+    .designcard li::before {
+        color: rgb(238, 23, 23);
+        content: ' \25CF';
+        padding-right: 10px;
+    }
+    
+    .designcard li {
+        display: block;
     }
     
     .redbig2 {
@@ -369,6 +399,7 @@
         color: rgb(42, 123, 245);
         font-family: 'Fjalla One', sans-serif;
         line-height: 200%;
+        cursor: pointer;
     }
     
     .design {
@@ -474,6 +505,12 @@
         transform: rotate(0deg);
         transition: transform 0.5s ease;
     }
+    
+    .wrapper {
+        transition: height 30s ease-out;
+        height: 0;
+        overflow: hidden;
+    }
     /*..............................................................................................*/
     
     @media screen and (max-width:1108px) {
@@ -552,6 +589,12 @@
         .search {
             width: 22%;
         }
+        .redcard .colorchange {
+            margin: -4px 0 -8px 155px;
+        }
+        .change {
+            font-size: 12px;
+        }
         .author {
             font-size: 14px;
         }
@@ -612,6 +655,9 @@
     @media screen and (max-width:700px) {
         .redcard {
             width: 100%;
+        }
+        .redcard .colorchange {
+            display: none;
         }
     }
     

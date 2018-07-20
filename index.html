@@ -5,7 +5,8 @@
     <title>
     </title>
     <meta name="viewport" content="width=device-width" , initial-scale="1">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+    <link rel="icon" href="smashing.ico">
     <link href="https://fonts.googleapis.com/css?family=Arvo|Spinnaker" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald|PT+Serif" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton|Fjalla+One" rel="stylesheet">
@@ -14,46 +15,46 @@
     <link href="https://fonts.googleapis.com/css?family=Erica+One|Fredoka+One|Hammersmith+One|Merienda|Mitr|Suez+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Capriola" rel="stylesheet">
 
-    <script type="text/JavaScript" src="jsfile.js" defer></script>
+    <script type="text/JavaScript" src="./script/jsfile.js" defer></script>
 
 </head>
 
 <body>
-    <img src="scrollup.png" onclick="topFunction()" id="myBtn" class="myBtn" width="5%">
+    <a href="#top"><img src="./images/scrollup.png" id="myBtn" class="myBtn" width="5%"></a>
     <header>
         <div style="padding-top: 2%;">
-            <img src="logo.svg" width="100px" onclick="location.reload()">
+            <img src="./images/logo.svg" width="100px" onclick="location.reload()">
         </div>
         <div class="headiv" onclick="headBorder(this)" onmouseout="bordernone(this)">
 
-            <img src="articles.svg" width="20%" class="imghov">
+            <img src="./images/articles.svg" width="20%" class="imghov">
             <h3>Article
                 <div class="topics">Design & Development</div>
             </h3>
 
         </div>
         <div class="headiv" onclick="headBorder(this)" onmouseout="bordernone(this)">
-            <img src="books.svg" width="20%" class="imghov">
+            <img src="./images/books.svg" width="20%" class="imghov">
             <h3>Books
                 <div class="topics">Physical & Digital books</div>
             </h3>
 
         </div>
         <div class="headiv" onclick="headBorder(this)" onmouseout="bordernone(this)">
-            <img src="events.svg" width="20%" class="imghov">
+            <img src="./images/events.svg" width="20%" class="imghov">
             <h3>Events
                 <div class="topics">Conference & Workshops</div>
             </h3>
         </div>
         <div class="headiv" onclick="headBorder(this)" onmouseout="bordernone(this)">
-            <img src="jobs.svg" width="20%" class="imghov">
+            <img src="./images/jobs.svg" width="20%" class="imghov">
             <h3>Jobs
                 <div class="topics">Find Works & Employees</div>
             </h3>
 
         </div>
         <div class="headiv" onclick="headBorder(this)" onmouseout="bordernone(this)">
-            <img src="membership.svg" width="20%" class="imghov">
+            <img src="./images/membership.svg" width="20%" class="imghov">
             <h3>Membership
                 <div class="topics">Webinars & Early Birds</div>
             </h3>
@@ -110,48 +111,51 @@
     <div style="display: inline-block;" class="content">
         <div class="redcard" style="background-color: #df3627f3;">
             <div>
-                <img src="man.jpg" width="25%" class="imgborder">
-                <div class="author">Murat Kemaldar<span> wrote</span></div>
+                <img src="./images/man.jpg" width="25%" class="imgborder">
+                <div class="author">Murat Kemaldar<span class="redspan"> wrote</span></div>
             </div>
             <div style=" margin: 15px 15px 15px;">
                 <div class="redesc" style="color: white;">Better Collaboration By Bringing Designers Into The Code Review Process</div>
             </div>
-            <a href="#" style="color: rgb(245, 241, 241);padding:2%; text-decoration: none;">Comment</a>
+            <a href="#" style="color: rgba(214, 205, 205, 0.925);padding:2%;" class="reda">Comment</a>
 
         </div>
 
         <div class="redcard" style="background-color: #cf3123f8;">
+            <div class="colorchange" onclick="colorchange()">
+                <span class="change"> seriously red</span>
+            </div>
             <div>
-                <img src="man.jpg" width="25%" class="imgborder">
-                <div class="author">Murat Kemaldar<span> wrote</span></div>
+                <img src="./images/man.jpg" width="25%" class="imgborder">
+                <div class="author">Murat Kemaldar<span class="redspan"> wrote</span></div>
             </div>
             <div style=" margin: 15px 15px 15px;">
                 <div class="redesc" style="color: white;">Better Collaboration By Bringing Designers Into The Code Review Process</div>
             </div>
-            <a href="#" style="color: white">Comment</a>
+            <a href="#" style="color:rgba(214, 205, 205, 0.925);" class="reda">Comment</a>
 
         </div>
 
-        <div class="redcard" style="background-color: #db2a1afa;">
+        <div class="redcard" style="background-color: #db2a1afa;" id="redcard3">
             <div>
-                <img src="man.jpg" width="25%" class="imgborder">
-                <div class="author">Murat Kemaldar<span> wrote</span></div>
+                <img src="./images/man.jpg" width="25%" class="imgborder">
+                <div class="author">Murat Kemaldar<span class="redspan"> wrote</span></div>
             </div>
             <div style=" margin: 15px 15px 15px;">
                 <div class="redesc" style="color: white;">Better Collaboration By Bringing Designers Into The Code Review Process</div>
             </div>
-            <a href="#" style="color: white">Comment</a>
+            <a href="#" style="color: rgba(214, 205, 205, 0.925);" class="reda">Comment</a>
 
         </div>
-        <div class="redcard" style="background-color: #db2a1aec;">
+        <div class="redcard" style="background-color: #db2a1aec;" id="redcard4">
             <div>
-                <img src="man.jpg" width="25%" class="imgborder">
-                <div class="author">Murat Kemaldar<span> wrote</span></div>
+                <img src="./images/man.jpg" width="25%" class="imgborder">
+                <div class="author">Murat Kemaldar<span class="redspan"> wrote</span></div>
             </div>
             <div style=" margin: 15px 15px 15px;">
                 <div class="redesc" style="color: white;">Better Collaboration By Bringing Designers Into The Code Review Process</div>
             </div>
-            <a href="#" style="color: white">Comment</a>
+            <a href="#" style="color: rgba(214, 205, 205, 0.925);" class="reda">Comment</a>
 
         </div>
     </div>
@@ -189,7 +193,7 @@
 
 
         <div class="redbig">
-            <img src="redbig.svg" width="40%">
+            <img src="./images/redbig.svg" width="40%">
             <div>
                 <a href="#" class="abig">961 Smashing members</a>
             </div>
@@ -240,12 +244,12 @@
                         Explore all features and topics
                     </button>
         </div>
-        <img src="green.svg " width="70% " style="align-self: center; ">
+        <img src="./images/green.svg " width="70% " style="align-self: center; ">
     </div>
     <div class="cardlist">
         <div class="card ">
             <div class="auth">
-                <img src="man.jpg " class="imgborder" style="display: inline-block;">
+                <img src="./images/man.jpg " class="imgborder" style="display: inline-block;">
                 <h4><a href=" # ">Murat Kemaldar</a> shared
                 </h4>
             </div>
@@ -255,7 +259,7 @@
         </div>
         <div class="card ">
             <div class="auth">
-                <img src="man.jpg " class="imgborder" style="display: inline-block;">
+                <img src="./images/man.jpg " class="imgborder" style="display: inline-block;">
                 <h4><a href=" # ">Murat Kemaldar</a> shared
                 </h4>
             </div>
@@ -265,7 +269,7 @@
         </div>
         <div class="card ">
             <div class="auth">
-                <img src="man.jpg " class="imgborder" style="display: inline-block;">
+                <img src="./images/man.jpg " class="imgborder" style="display: inline-block;">
                 <h4><a href=" # ">Murat Kemaldar</a> shared
                 </h4>
             </div>
@@ -275,7 +279,7 @@
         </div>
         <div class="card ">
             <div class="auth">
-                <img src="man.jpg " class="imgborder" style="display: inline-block;">
+                <img src="./images/man.jpg " class="imgborder" style="display: inline-block;">
                 <h4><a href=" # ">Murat Kemaldar</a> shared
                 </h4>
             </div>
@@ -285,7 +289,7 @@
         </div>
         <div class="card ">
             <div class="auth">
-                <img src="man.jpg " class="imgborder" style="display: inline-block;">
+                <img src="./images/man.jpg " class="imgborder" style="display: inline-block;">
                 <h4><a href=" # ">Murat Kemaldar</a> shared
                 </h4>
             </div>
@@ -295,7 +299,7 @@
         </div>
         <div class="card ">
             <div class="auth">
-                <img src="man.jpg " class="imgborder" style="display: inline-block;">
+                <img src="./images/man.jpg " class="imgborder" style="display: inline-block;">
                 <h4><a href=" # ">Murat Kemaldar</a> shared
                 </h4>
             </div>
@@ -316,7 +320,7 @@
             </div>
         </div>
         <div class="headiv ">
-            <img src="book.png " style=" width: 70%; margin-left: 100px; " class="imghov ">
+            <img src="./images/book.png " style=" width: 70%; margin-left: 100px; " class="imghov ">
         </div>
 
     </div>
@@ -389,7 +393,7 @@
             </div>
             <div>Imagine you wrote a beautiful song and nobody discovered it. That would make any cat sad. Don't let that happen!
             </div>
-            <img src="redbig2.svg " width="40% ">
+            <img src="./images/redbig2.svg " width="40% ">
 
             <div>
                 <button>
@@ -442,10 +446,10 @@
         </div>
 
         <div class="footersplit ">
-            <img src="bird.svg " width="20% " class="image1 ">
-            <img src="catcage.svg " class="image2 ">
-            <img src="birdout.svg " class="image4 ">
-            <img src="birdfly.svg " class="image5 ">
+            <img src="./images/bird.svg " width="20% " class="image1 ">
+            <img src="./images/catcage.svg " class="image2 ">
+            <img src="./images/birdout.svg " class="image4 ">
+            <img src="./images/birdfly.svg " class="image5 ">
             <div class="footermid">
                 <p class="info">
                     With a commitment to quality content for the design community.<br> Founded by Vitaly Friedman and Sven Lennartz. 2006–2018.<br> Smashing is proudly running on Netlify.<br> Fonts by Latinotype.<br>
@@ -457,7 +461,7 @@
                     <a href="# ">Membership login</a>
                     <a href="# ">Advetise</a>
             </div>
-            <img src="cat.svg " width="20% " class="image3 ">
+            <img src="./images/cat.svg " width="20% " class="image3 ">
 
         </div>
     </footer>
